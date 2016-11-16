@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+         
+          <bean id="rubrica"   class="it.alfasoft.martina.model.Rubrica">
+          
+            <property name="listaVoci">
+            
+                 <list>
+                 
+                    <ref bean="v1"/>
+                    <ref bean="v2"/>
+                    <ref bean="v3"/>
+            
+                 </list>
+            </property>
+   
+          </bean>
+            
+            
+            <bean id="v1"   class="it.alfasoft.martina.model.Voce">
+            
+               <property name="nome" value="Martina"></property>
+               <property name="cognome" value="Debernardi"></property>
+               <property name="telefono" value="3401785145"></property>
+          
+            </bean>
+            
+               <bean id="v2"   class="it.alfasoft.martina.model.Voce">
+            
+               <property name="nome" value="Luca"></property>
+               <property name="cognome" value="Umoretto"></property>
+               <property name="telefono" value="356478145"></property>
+          
+            </bean>
+            
+               <bean id="v3"   class="it.alfasoft.martina.model.Voce">
+            
+               <property name="nome" value="Irene"></property>
+               <property name="cognome" value="Aimone"></property>
+               <property name="telefono" value="3496587459"></property>
+          
+            </bean>
+            
+</beans>          
